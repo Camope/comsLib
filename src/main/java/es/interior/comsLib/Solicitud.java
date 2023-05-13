@@ -5,6 +5,8 @@ import java.util.Date;
 public class Solicitud {
 	
 	private Date fechaSolicitud;
+	private Comision comision;
+	private Usuario usuario;
 
 	public Date getFechaSolicitud() {
 		return fechaSolicitud;
@@ -14,9 +16,25 @@ public class Solicitud {
 		this.fechaSolicitud = fechaSolicitud;
 	}
 
+	public Comision getComision() {
+		return comision;
+	}
+
+	public void setComision(Comision comision) {
+		this.comision = comision;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
 	@Override
 	public String toString() {
-		return "Solicitud [fechaSolicitud=" + fechaSolicitud + "]";
+		return "Solicitud [fechaSolicitud=" + fechaSolicitud + ", comision=" + comision + ", usuario=" + usuario + "]";
 	}
 
 }
