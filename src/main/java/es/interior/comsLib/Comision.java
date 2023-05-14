@@ -12,7 +12,7 @@ public class Comision {
 	private Date fechaLimite;
 	private Integer duracion;
 	private String detalles;
-	private List<Solicitud> solicitudes;
+//	private List<Solicitud> solicitudes;
 
 	public String getPuesto() {
 		return puesto;
@@ -78,19 +78,19 @@ public class Comision {
 		this.detalles = detalles;
 	}
 
-	public List<Solicitud> getSolicitudes() {
-		return solicitudes;
-	}
-
-	public void setSolicitudes(List<Solicitud> solicitudes) {
-		this.solicitudes = solicitudes;
-	}
+//	public List<Solicitud> getSolicitudes() {
+//		return solicitudes;
+//	}
+//
+//	public void setSolicitudes(List<Solicitud> solicitudes) {
+//		this.solicitudes = solicitudes;
+//	}
 
 	@Override
 	public String toString() {
 		return "Comision [puesto=" + puesto + ", localidad=" + localidad + ", especialidad=" + especialidad
 				+ ", empleo=" + empleo + ", fechaPublicacion=" + fechaPublicacion + ", fechaLimite=" + fechaLimite
-				+ ", duracion=" + duracion + ", solicitudes=" + solicitudes + "]";
+				+ ", duracion=" + duracion + "]";
 	}
 
 }
