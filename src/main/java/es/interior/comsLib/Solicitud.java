@@ -6,7 +6,7 @@ public class Solicitud {
 	
 	private Date fechaSolicitud;
 	private Comision comision;
-	private Usuario usuario;
+	//private Usuario usuario;
 
 	public Date getFechaSolicitud() {
 		return fechaSolicitud;
@@ -24,17 +24,17 @@ public class Solicitud {
 		this.comision = comision;
 	}
 
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
+//	public Usuario getUsuario() {
+//		return usuario;
+//	}
+//
+//	public void setUsuario(Usuario usuario) {
+//		this.usuario = usuario;
+//	}
 
 	@Override
 	public String toString() {
-		return "Solicitud [fechaSolicitud=" + fechaSolicitud + ", comision=" + comision + ", usuario=" + usuario + "]";
+		return "Solicitud [fechaSolicitud=" + fechaSolicitud + ", comision=" + comision;// + ", usuario=" + usuario + "]";
 	}
 
 }
