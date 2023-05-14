@@ -11,6 +11,7 @@ public class Comision {
 	private Date fechaPublicacion;
 	private Date fechaLimite;
 	private Integer duracion;
+	private String detalles;
 	private List<Solicitud> solicitudes;
 
 	public String getPuesto() {
@@ -67,6 +68,14 @@ public class Comision {
 
 	public void setDuracion(Integer duracion) {
 		this.duracion = duracion;
+	}
+
+	public String getDetalles() {
+		return detalles;
+	}
+
+	public void setDetalles(String detalles) {
+		this.detalles = detalles;
 	}
 
 	public List<Solicitud> getSolicitudes() {

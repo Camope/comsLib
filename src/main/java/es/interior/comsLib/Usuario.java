@@ -4,10 +4,6 @@ import java.util.List;
 
 public class Usuario {
 
-	public static enum Role {
-		administrador, noAdministrador
-	}
-
 	private String nombre;
 	private String apellidos;
 	private String tip;
