@@ -1,6 +1,6 @@
 package es.interior.comsLib;
 
-public class Extranjero extends Comision {
+public class Extranjero extends Comision implements ExtranjeroInterfaz {
 
 	private String perfil;
 

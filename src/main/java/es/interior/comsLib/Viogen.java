@@ -1,6 +1,6 @@
 package es.interior.comsLib;
 
-public class Viogen extends Comision {
+public class Viogen extends Comision implements ViogenInterface {
 
 	private String riesgo;
 
@@ -16,4 +16,5 @@ public class Viogen extends Comision {
 	public String toString() {
 		return "Viogen [riesgo=" + riesgo + "]";
 	}
+
 }
