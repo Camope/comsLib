@@ -6,8 +6,4 @@ public interface ExtranjeroInterfaz {
 	
 	public void setPerfil(String p);
 
-	public default String getTipo() {
-		return "EXTRANJERO";
-	}
-	
 }

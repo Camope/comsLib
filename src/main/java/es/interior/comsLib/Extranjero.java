@@ -11,6 +11,10 @@ public class Extranjero extends Comision implements ExtranjeroInterfaz {
 	public void setPerfil(String perfil) {
 		this.perfil = perfil;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Extranjero [perfil=" + perfil + "]";
+	}
 	
 }
