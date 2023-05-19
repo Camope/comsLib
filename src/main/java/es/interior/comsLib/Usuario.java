@@ -2,14 +2,14 @@ package es.interior.comsLib;
 
 import java.util.List;
 
-public class Usuario implements UsuarioInterface {
+public class Usuario {
 
 	private String nombre;
 	private String apellidos;
 	private String tip;
 	private String empleo;
 	private String email;
-	List<SolicitudInterface> solicitudes;
+	List<Solicitud> solicitudes;
 
 	public String getNombre() {
 		return nombre;
@@ -51,14 +51,14 @@ public class Usuario implements UsuarioInterface {
 		this.email = email;
 	}
 
-	public List<SolicitudInterface> getSolicitudes() {
+	public List<Solicitud> getSolicitudes() {
 		return solicitudes;
 	}
 
-	public void setSolicitudes(List<SolicitudInterface> solicitudes) {
+	public void setSolicitudes(List<Solicitud> solicitudes) {
 		this.solicitudes = solicitudes;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Usuario [nombre=" + nombre + ", apellidos=" + apellidos + ", tip=" + tip + ", empleo=" + empleo

@@ -4,4 +4,6 @@ public interface ViogenInterface {
 
 	public String getRiesgo();
 
+	public void setRiesgo(String r);
+
 }

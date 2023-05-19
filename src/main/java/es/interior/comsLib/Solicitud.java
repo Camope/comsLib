@@ -2,11 +2,11 @@ package es.interior.comsLib;
 
 import java.util.Date;
 
-public class Solicitud implements SolicitudInterface {
+public class Solicitud {
 	
 	private Date fechaSolicitud;
-	private ComisionInterface comision;
-	private UsuarioInterface usuario;
+	private Comision comision;
+	private Usuario usuario;
 
 	public Date getFechaSolicitud() {
 		return fechaSolicitud;
@@ -16,25 +16,25 @@ public class Solicitud implements SolicitudInterface {
 		this.fechaSolicitud = fechaSolicitud;
 	}
 
-	public ComisionInterface getComision() {
+	public Comision getComision() {
 		return comision;
 	}
 
-	public void setComision(ComisionInterface comision) {
+	public void setComision(Comision comision) {
 		this.comision = comision;
 	}
 
-	public UsuarioInterface getUsuario() {
+	public Usuario getUsuario() {
 		return usuario;
 	}
 
-	public void setUsuario(UsuarioInterface usuario) {
+	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
 
 	@Override
 	public String toString() {
-		return "Solicitud [fechaSolicitud=" + fechaSolicitud + ", comision=" + comision.getPuesto() + ", usuario=" + usuario.getTip() + "]";
+		return "Solicitud [fechaSolicitud=" + fechaSolicitud + ", comision=" + comision + ", usuario=" + usuario + "]";
 	}
 
 }
