@@ -3,7 +3,7 @@ package es.interior.comsLib;
 import java.util.Date;
 import java.util.List;
 
-public class Comision {
+public class Comision implements ComisionInterface {
 	private String puesto;
 	private String localidad;
 	private String especialidad;
@@ -12,7 +12,7 @@ public class Comision {
 	private Date fechaLimite;
 	private Integer duracion;
 	private String detalles;
-	private List<Solicitud> solicitudes;
+	private List<SolicitudInterface> solicitudes;
 
 	public String getPuesto() {
 		return puesto;
@@ -78,11 +78,11 @@ public class Comision {
 		this.detalles = detalles;
 	}
 
-	public List<Solicitud> getSolicitudes() {
+	public List<SolicitudInterface> getSolicitudes() {
 		return solicitudes;
 	}
 
-	public void setSolicitudes(List<Solicitud> solicitudes) {
+	public void setSolicitudes(List<SolicitudInterface> solicitudes) {
 		this.solicitudes = solicitudes;
 	}
 
